@@ -132,5 +132,13 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
+  s.platform     = :ios
+  s.preserve_paths = 'opencv2.framework'
+  s.vendored_frameworks = 'opencv2.framework'
+  s.public_header_files = 'opencv2.framework/Versions/A/Headers/**/*{.h,.hpp}'
+  s.header_dir = 'opencv2'
+  s.header_mappings_dir = 'opencv2.framework/Versions/A/Headers/'
+  s.libraries    = 'c++'
+  s.frameworks = 'opencv2'
+  s.xcconfig = {'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/OpenCV'}
 end
