@@ -2,5 +2,5 @@ This repo is used for iOS apps to be able to load OpenCV as a Cocoapod. To updat
 
 To use this repo add: 
 ```
-pod 'OpenCV', :git => 'https://github.com/bhaskarreddych/OpenCV4.5.5.git', :branch => 'main'
+pod 'OpenCV', :git => 'https://github.com/awcchungster/opencv_ios.git', :branch => 'main'
 ```
